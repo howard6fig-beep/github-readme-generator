@@ -1,9 +1,22 @@
+// Force Vercel to treat this as a serverless function, not a page
+export const config = {
+  api: {
+    bodyParser: {
+      sizeLimit: '1mb',
+    },
+  },
+};
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
   const { username } = req.body;
+
+  if (!username) {
+    return res.status(400).json({ error: 'Username is required.' });
+  }
 
   try {
     // Fetch basic user data from public GitHub API
@@ -35,7 +48,7 @@ export default async function handler(req, res) {
 
 Check out my work below!`;
 
-    // Generate Premium Template (Uses external shields.io badges & stats)
+    // Generate Premium Template
     const premiumTemplate = `<!-- PREMIUM TEMPLATE -->
 <div align="center">
   
