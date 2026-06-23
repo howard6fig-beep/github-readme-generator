@@ -102,8 +102,7 @@ export default function Home() {
               <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', background: 'white', padding: '25px', border: '2px solid #9b59b6', borderRadius: '10px', textAlign: 'center', width: '300px', boxShadow: '0 10px 15px rgba(0,0,0,0.1)' }}>
                 <p style={{ fontWeight: 'bold', marginBottom: '10px', fontSize: '18px' }}>Unlock Premium Template</p>
                 <p style={{ fontSize: '14px', marginBottom: '20px', color: '#666' }}>Get dynamic stat cards, typing animations, and sleek borders.</p>
-                {https://buy.stripe.com/5kQ7sNdvTdDoaMV97a1B603}
-                <a href="GUMROAD_PAYMENT_LINK_HERE" style={{ background: '#9b59b6', color: 'white', padding: '12px 25px', textDecoration: 'none', borderRadius: '5px', fontWeight: 'bold', display: 'inline-block' }}>
+                <a href="https://buy.stripe.com/5kQ7sNdvTdDoaMV97a1B603" style={{ background: '#9b59b6', color: 'white', padding: '12px 25px', textDecoration: 'none', borderRadius: '5px', fontWeight: 'bold', display: 'inline-block' }}>
                   Unlock for $4
                 </a>
               </div>
